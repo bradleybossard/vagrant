@@ -15,6 +15,9 @@ Vagrant.configure("2") do |config|
   config.vm.box = "Sliim/metasploitable2"
   config.vm.box_version = "2"
 
+  config.ssh.username = "msfadmin"
+  config.ssh.password = "msfadmin"
+
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
